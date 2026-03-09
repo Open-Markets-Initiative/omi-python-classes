@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omipy"
+version = "0.1.0"
+description = "Omi Binary Protocol Parsers"
+readme = "ReadMe.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["pypcapkit"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/Open-Markets-Initiative/omipy"
+Repository = "https://github.com/Open-Markets-Initiative/omipy"
+
+[tool.setuptools.packages.find]
+where = ["src"]
