@@ -5,7 +5,7 @@
 
 | Division | Data | Protocol | Version | Date | Size | [Testing][Omi.Glossary.Testing] |
 | --- | --- | --- | --- | ---: | ---: | --- |
-| NsmEquities | [TotalView][Nasdaq.NsmEquities.TotalView.Itch.v5.0.Parser] | Itch | [5.0][Nasdaq.NsmEquities.TotalView.Itch.v5.0.Parser] | 2/19/2026 | 5412 | [Verified][Omi.Glossary.Testing.Verified] |
+| NsmEquities | [TotalView][Nasdaq.NsmEquities.TotalView.Itch.v5.0.Parser] | Itch | [5.0][Nasdaq.NsmEquities.TotalView.Itch.v5.0.Parser] | 2/19/2026 | 5411 | [Verified][Omi.Glossary.Testing.Verified] |
 
 
 Nasdaq: [website](https://www.nasdaq.com "Go to National Association of Securities Dealers Automated Quotations")

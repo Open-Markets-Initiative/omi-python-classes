@@ -5315,18 +5315,6 @@ class Message:
     def valid(self) -> bool:
         return self._error is None
 
-def Messages_factory(data: bytes, offset: int, parent, message_type):
-    """TODO"""
-    match message_type:
-        case 0:
-            return Heartbeat(data, offset, parent)
-
-        case 65535:
-            return EndOfSession(data, offset, parent)
-
-        case _:
-            return _Unknown(message_type)
-
 class PacketHeader:
     __slots__ = ('_name', '_error', '_length', '_parent', 'session', 'sequence_number', 'message_count')
 
@@ -5398,13 +5386,24 @@ class Packet:
 
         current += self.packet_header._length
 
-        message_type = self.packet_header.message_count.value
-        self.messages = Messages_factory(data, current, self, message_type)
-        if not self.messages.valid:
-            self._error = self.messages._error
+        self.messages = []
+        _count = self.packet_header.message_count.value
+
+        if _count == 0:
             return
 
-        current += self.messages._length
+        if _count == 65535:
+            return
+
+
+        for _ in range(_count):
+            message = Message(data, current, self)
+            if not message.valid:
+                self._error = message._error
+                return
+
+            self.messages.append(message)
+            current += message._length
 
     @property
     def valid(self) -> bool:

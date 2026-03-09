@@ -5,12 +5,12 @@
 
 | Division | Data | Protocol | Version | Date | Size | [Testing][Omi.Glossary.Testing] |
 | --- | --- | --- | --- | ---: | ---: | --- |
-| Equities | [Deep][Iex.Equities.Deep.IexTp.v1.0.8.Parser] | IexTp | [1.0.8][Iex.Equities.Deep.IexTp.v1.0.8.Parser] | 2/27/2018 | 3503 | [Verified][Omi.Glossary.Testing.Verified] |
-| Equities | [Deep][Iex.Equities.Deep.IexTp.v1.0.6.Parser] | IexTp | [1.0.6][Iex.Equities.Deep.IexTp.v1.0.6.Parser] | 2/27/2018 | 3409 | [Verified][Omi.Glossary.Testing.Verified] |
-| Equities | [DeepPlus][Iex.Equities.DeepPlus.IexTp.v1.0.1.Parser] | IexTp | [1.0.1][Iex.Equities.DeepPlus.IexTp.v1.0.1.Parser] | 9/30/2024 | 3159 | [Verified][Omi.Glossary.Testing.Verified] |
-| Equities | [Tops][Iex.Equities.Tops.IexTp.v1.6.6.Parser] | IexTp | [1.6.6][Iex.Equities.Tops.IexTp.v1.6.6.Parser] | 10/19/2021 | 3651 | [Verified][Omi.Glossary.Testing.Verified] |
-| Equities | [Tops][Iex.Equities.Tops.IexTp.v1.6.4.Parser] | IexTp | [1.6.4][Iex.Equities.Tops.IexTp.v1.6.4.Parser] | 2/27/2018 | 3651 | [Verified][Omi.Glossary.Testing.Verified] |
-| Equities | [Tops][Iex.Equities.Tops.IexTp.v1.5.6.Parser] | IexTp | [1.5.6][Iex.Equities.Tops.IexTp.v1.5.6.Parser] | 9/23/2016 | 3607 | [Verified][Omi.Glossary.Testing.Verified] |
+| Equities | [Deep][Iex.Equities.Deep.IexTp.v1.0.8.Parser] | IexTp | [1.0.8][Iex.Equities.Deep.IexTp.v1.0.8.Parser] | 2/27/2018 | 3502 | [Verified][Omi.Glossary.Testing.Verified] |
+| Equities | [Deep][Iex.Equities.Deep.IexTp.v1.0.6.Parser] | IexTp | [1.0.6][Iex.Equities.Deep.IexTp.v1.0.6.Parser] | 2/27/2018 | 3408 | [Verified][Omi.Glossary.Testing.Verified] |
+| Equities | [DeepPlus][Iex.Equities.DeepPlus.IexTp.v1.0.1.Parser] | IexTp | [1.0.1][Iex.Equities.DeepPlus.IexTp.v1.0.1.Parser] | 9/30/2024 | 3158 | [Verified][Omi.Glossary.Testing.Verified] |
+| Equities | [Tops][Iex.Equities.Tops.IexTp.v1.6.6.Parser] | IexTp | [1.6.6][Iex.Equities.Tops.IexTp.v1.6.6.Parser] | 10/19/2021 | 3650 | [Verified][Omi.Glossary.Testing.Verified] |
+| Equities | [Tops][Iex.Equities.Tops.IexTp.v1.6.4.Parser] | IexTp | [1.6.4][Iex.Equities.Tops.IexTp.v1.6.4.Parser] | 2/27/2018 | 3650 | [Verified][Omi.Glossary.Testing.Verified] |
+| Equities | [Tops][Iex.Equities.Tops.IexTp.v1.5.6.Parser] | IexTp | [1.5.6][Iex.Equities.Tops.IexTp.v1.5.6.Parser] | 9/23/2016 | 3606 | [Verified][Omi.Glossary.Testing.Verified] |
 
 
 Iex: [website](https://www.iexexchange.io "Go to Investors Exchange")

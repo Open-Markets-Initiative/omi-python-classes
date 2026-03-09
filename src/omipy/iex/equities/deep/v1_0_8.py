@@ -3353,15 +3353,6 @@ class Message:
     def valid(self) -> bool:
         return self._error is None
 
-def Messages_factory(data: bytes, offset: int, parent, message_type):
-    """TODO"""
-    match message_type:
-        case 0:
-            return Heartbeat(data, offset, parent)
-
-        case _:
-            return _Unknown(message_type)
-
 class IextpHeader:
     __slots__ = ('_name', '_error', '_length', '_parent', 'version', 'reserved', 'message_protocol_id', 'channel_id', 'session_id', 'payload_length', 'message_count', 'stream_offset', 'first_message_sequence_number', 'send_time')
 
@@ -3489,13 +3480,21 @@ class Packet:
 
         current += self.iextp_header._length
 
-        message_type = self.iextp_header.message_count.value
-        self.messages = Messages_factory(data, current, self, message_type)
-        if not self.messages.valid:
-            self._error = self.messages._error
+        self.messages = []
+        _count = self.iextp_header.message_count.value
+
+        if _count == 0:
             return
 
-        current += self.messages._length
+
+        for _ in range(_count):
+            message = Message(data, current, self)
+            if not message.valid:
+                self._error = message._error
+                return
+
+            self.messages.append(message)
+            current += message._length
 
     @property
     def valid(self) -> bool:
